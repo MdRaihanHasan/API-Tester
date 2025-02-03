@@ -22,7 +22,7 @@ A lightweight, feature-rich REST client embedded directly in your browser for qu
 ### Steps
 1. **Download the Extension:**
    ```sh
-   git clone https://github.com/your-username/api-tester-chrome-extension.git
+   git clone https://github.com/MdRaihanHasan/API-Tester.git
    ```
 2. **Load the Extension in Chrome:**
    - Open Chrome and go to `chrome://extensions/`.
@@ -79,7 +79,7 @@ We welcome contributions! Here’s how you can help:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/mdraihanhasan/api-tester.git
+   git clone https://github.com/MdRaihanHasan/API-Tester.git
    ```
 2. **Load the extension in Chrome** as described in the Installation section.
 3. **Make changes** to files (`popup.html`, `popup.js`, `styles.css`, etc.).
