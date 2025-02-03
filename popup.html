@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Tester</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="default.min.css">
+</head>
+<body>
+  <h1>API Tester</h1>
+  <form id="api-form">
+    <!-- Method and URL -->
+    <label for="method">Method:</label>
+    <select id="method">
+      <option value="GET">GET</option>
+      <option value="POST">POST</option>
+      <option value="PUT">PUT</option>
+      <option value="DELETE">DELETE</option>
+    </select>
+
+    <label for="url">URL:</label>
+    <input type="text" id="url" placeholder="https://api.example.com" required>
+
+    <!-- Environment Variables -->
+    <label for="env-vars">Environment Variables:</label>
+    <textarea id="env-vars" placeholder='{"base_url": "https://api.example.com", "token": "abc123"}'></textarea>
+
+    <!-- Headers -->
+    <label for="headers">Headers:</label>
+    <textarea id="headers" placeholder='{"Content-Type": "application/json"}'></textarea>
+
+    <!-- Body -->
+    <label for="body">Body:</label>
+    <textarea id="body" placeholder='{"key": "value"}'></textarea>
+
+    <!-- Authentication -->
+    <label for="auth-type">Authentication:</label>
+    <select id="auth-type">
+      <option value="none">None</option>
+      <option value="api-key">API Key</option>
+      <option value="bearer">Bearer Token</option>
+      <option value="oauth2">OAuth 2.0</option>
+    </select>
+
+    <div id="auth-fields">
+      <!-- Dynamic fields for API Key, Bearer Token, etc. -->
+    </div>
+
+    <!-- Scripts -->
+    <label for="pre-request-script">Pre-request Script:</label>
+    <textarea id="pre-request-script" placeholder="JavaScript code"></textarea>
+
+    <label for="post-request-script">Post-request Script:</label>
+    <textarea id="post-request-script" placeholder="JavaScript code"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Send Request</button>
+  </form>
+
+  <!-- Response Section -->
+  <h2>Response</h2>
+  <pre><code id="response" class="json"></code></pre>
+
+  <!-- Dark Mode Toggle -->
+  <label for="dark-mode">Dark Mode:</label>
+  <input type="checkbox" id="dark-mode">
+
+  <!-- Highlight.js Script -->
+  <script src="highlight.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
